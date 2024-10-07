@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(28, 28, 28) 70%, black);
+    height: 100vh;
+    flex-direction: column;
+    width: 100vw;
+}
+
+header{
+    height: 10vh;
+}
+.title{
+    text-align: center;
+    animation: zoom-in 2s cubic-bezier(1, 0, 0, 1) forwards;
+    position: relative;
+}
+.title h1{
+    position: absolute;
+    left: 50%;
+    top: 170px; /* You can adjust this value for vertical positioning */
+    transform: translate(-50%) scale(1.5); /* Translate to center horizontally */
+    color: rgb(255, 255, 255);
+    font-size: 670px;
+}
+
+main{
+    height: 60vh;
+}
+main img{
+    height: 60vh;
+    box-shadow: 0px 0px 100px black;
+    border-radius: 100px;
+}
+
+footer{
+    height: 30vh;
+    background-color: rgb(55, 55, 55);
+    margin-bottom: 10vh;
+    margin-left: 0.1vh;
+    width: 54.6vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    box-shadow: 0px 0px 100px black;
+}
+footer div{
+    margin:60px 0px 0px;
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+}
+
+#creator{
+    border:1px solid transparent;
+    border-radius: 100px;
+    height: 10vh;
+}
+
+
+@keyframes zoom-in{
+    0%{
+        transform: translateX(-50%) scale(0.5);
+    }
+    100%{
+        transform: translateX(-50%,0) scale(1);
+    }
+}
