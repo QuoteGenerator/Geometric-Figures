@@ -30,6 +30,26 @@ header{
     font-size: 670px;
 }
 
+.arrowLeft, .arrowRight{
+    position: absolute;
+    text-align: center;
+    color:white;
+}
+.arrowLeft{
+    left:470px;
+    top:500px;
+}
+.arrowRight{
+    left:2000px;
+    top:500px;
+}
+.arrowLeft:hover, .arrowRight:hover{
+    cursor: pointer;
+}
+.arrowLeft p, .arrowRight p{
+    font-size: 80px;
+}
+
 main{
     height: 60vh;
 }
@@ -40,7 +60,7 @@ main img{
 }
 
 footer{
-    height: 30vh;
+    height: 20vh;
     background-color: rgb(55, 55, 55);
     margin-bottom: 10vh;
     margin-left: 0.1vh;
