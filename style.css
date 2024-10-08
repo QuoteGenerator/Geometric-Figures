@@ -30,7 +30,7 @@ header{
     font-size: 670px;
 }
 
-.arrowLeft, .arrowRight{
+.arrowLeft, .arrowRight, .mainButton{
     position: absolute;
     text-align: center;
     color:white;
@@ -43,11 +43,31 @@ header{
     left:2000px;
     top:500px;
 }
-.arrowLeft:hover, .arrowRight:hover{
+.arrowLeft:hover, .arrowRight:hover, .mainButton:hover{
     cursor: pointer;
 }
 .arrowLeft p, .arrowRight p{
     font-size: 80px;
+}
+
+.mainButton{
+    left: 620px;
+    top: 180px;
+    width: 68px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    padding: 5px;
+}
+#block1, #block2, #block3, #block4{
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 5px solid black;
+    border-radius: 50px;
+    margin: 1px;
 }
 
 main{
@@ -88,9 +108,9 @@ p{
 
 @keyframes zoom-in{
     0%{
-        transform: translateX(-50%) scale(0.5);
+        transform: translateY(-10%) scale(0.01);
     }
     100%{
-        transform: translateX(-50%,0) scale(1);
+        transform: translateY(-50%,0) scale(1);
     }
 }
