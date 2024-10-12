@@ -15,19 +15,27 @@ body{
 
 header{
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
+#headerTitle{
+    margin-top: 0.5vw;
+    color: white;
+    font-size: 3vw;
+}
+
 .title{
     text-align: center;
-    animation: zoom-in 2s cubic-bezier(1, 0, 0, 1) forwards;
     position: relative;
 }
 .title h1{
     position: absolute;
-    left: 50%;
-    top: 170px; /* You can adjust this value for vertical positioning */
-    transform: translate(-50%) scale(1.5); /* Translate to center horizontally */
+    left: 27.8vw;
+    top: 14vh; /* You can adjust this value for vertical positioning */
+    transform: translate(-53%); /* Translate to center horizontally */
     color: rgb(255, 255, 255);
-    font-size: 670px;
+    animation: zoom-in 1.8s cubic-bezier(1, 0, 0, 1) forwards;
 }
 
 .arrowLeft, .arrowRight, .mainButton{
@@ -36,51 +44,53 @@ header{
     color:white;
 }
 .arrowLeft{
-    left:470px;
-    top:500px;
+    left:18.5vw;
+    top:38vh;
 }
 .arrowRight{
-    left:2000px;
-    top:500px;
+    left:79.5vw;
+    top:38vh;
 }
 .arrowLeft:hover, .arrowRight:hover, .mainButton:hover{
     cursor: pointer;
 }
 .arrowLeft p, .arrowRight p{
-    font-size: 80px;
+    font-size: 3vw;
 }
 
 .mainButton{
-    left: 620px;
-    top: 180px;
-    width: 68px;
-    height: 50px;
+    left: 24.5vw;
+    top: 14vh;
+    width:2.7vw;
+    height: 2vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-between;
-    padding: 5px;
+    padding: 0.1vw;
 }
+
 #block1, #block2, #block3, #block4{
-    width: 20px;
-    height: 20px;
+    width: 0.7vw;
+    height: 0.7vw;
     background: white;
-    border: 5px solid black;
-    border-radius: 50px;
-    margin: 1px;
+    border: 0.2vw solid black;
+    border-radius: 50vw;
+    margin: 0vw;
+    padding:0.1vw;
 }
 
 main{
     height: 60vh;
 }
 main img{
-    height: 60vh;
-    box-shadow: 0px 0px 100px black;
-    border-radius: 100px;
+    box-shadow: 0px 0px 3vw black;
+    border-radius: 4vw;
+    width: 54.6vw;
 }
 
 footer{
-    height: 20vh;
+    height: 10vw;
     background-color: rgb(55, 55, 55);
     margin-bottom: 10vh;
     margin-left: 0.1vh;
@@ -88,29 +98,37 @@ footer{
     display: flex;
     justify-content: space-evenly;
     color: white;
-    box-shadow: 0px 0px 100px black;
+    box-shadow: 0px 0px 4vw black;
 }
 footer div{
-    margin:60px 0px 0px;
+    margin:2vw 0px 0px;
     text-align: center;
 }
 
+h2{
+    font-size:1vw;
+    margin: 0px 0px 0.5vw 0px;
+}
+#theCreatorTitle{
+    margin-bottom: 0px;
+}
+
 p{
-    font-size: 18px;
+    font-size: 0.7vw;
 }
 
 #creator{
-    border:1px solid transparent;
-    border-radius: 100px;
-    height: 10vh;
+    border: 0px solid transparent;
+    border-radius: 4vw;
+    width: 4vw;
 }
 
 
 @keyframes zoom-in{
     0%{
-        transform: translateY(-10%) scale(0.01);
+        font-size: 0.1vw;
     }
     100%{
-        transform: translateY(-50%,0) scale(1);
+        font-size: 2.5vw;
     }
 }
